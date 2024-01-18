@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>responsive website</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" type="text/css" href="/static/homepage.css">
+    
+  
+</head>
+<body>
+
+    <header class="header fixed-top">
+
+         <div class="conatiner">
+
+            <div class="row align-items-center">
+
+                 <a href="#" class="logo mx-auto"> <i class="fa-solid fa-hand-holding-droplet"></i> Ichor </a>
+
+                 <nav class="nav mx-auto">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#services">services</a>
+                    <a href="#reviews">reviews</a>
+                    <a href="#blogs">blogs</a>
+                    <a href="#contact">contact</a>
+                 </nav>
+
+                 <div class="icons mx-auto">
+                    <div class="fas fa-search" id="search-btn"></div>
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                    <div id="user-btn" class="fas fa-user"></div>
+
+                </div>
+
+                
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <!-- Your dropdown menu content -->
+                            <a href="#" onclick="openProfilePage()">My Profile</a>
+                            <a href="#" onclick="openRequestPage()">Request</a>
+                            <a href="#" onclick="openDonatePage()">Donate</a>
+                            <a href="#" onclick="openFindPage()">Find</a>
+                            <a href="#" onclick="openBlogPage()">Blog-page</a>
+                            <a href="#" id="login-option">Login</a>
+                            <!-- Add more menu items as needed -->
+                        </div>
+                    </div>
+               
+
+                 <div class="search-form">
+                    <input type="search" id="search-box" placeholder="  search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                 </div>
+
+            </div>
+
+         </div>
+
+    </header>  
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="row  align-items-center text-center text-md-left min-vh-100">
+                <div class="col-md-6">
+                    <span>every drop of blood is precious!</span>
+                    <h3>We are here anytime you need us</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about us</span></h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="https://img.freepik.com/free-vector/doctor-taking-blood-sample-old-patient-hospital-man-doing-checkup-examination-clinic-senior-sitting-chair_575670-1318.jpg?w=1380&t=st=1689686418~exp=1689687018~hmac=2491256fe0a97160557adc060aa633a4819f3fd28bbbf34b55d7d2481c8fb3ef" alt="">
+            </div>
+
+            <div class="content">
+                <h3> How does it work...?</h3>
+                <p> According to your need we provide you the best blood bank source around your location. In the case of emergency all you have to do is go to the request section select the emergency form and fill out your details,
+                    as per your requirements we find out the nearest blood bank available and provide you with its address. You will also be having alternate areas you can choose any location you like. If you will require some specific blood group frequently 
+                    then you can find yourself a donor a couple days before you need it. However if you are someone who would like to be a helping hand and donate, you can go to the  donate section fill up your details and choose a near by location where you can donate.  </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+
+        <h1 class="heading"> our services</h1>
+
+        <div class="container box-container">
+
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjv_cvYrPZdJCSdzGvApkOOUqTQQRBBKQGnFfpbS3wHdRP-rNQqLW3K4Zq4noCzXKIpzI&usqp=CAU" alt="">
+                <h3>Donate</h3>
+                <p>To donate you should first meet our criteria, then you will be eligible to donate blood</p>
+                <a href="#" class="link-btn" onclick="openDonatePage()">fill form</a>
+
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/premium-vector/icon-hand-holding-drop-blood-world-blood-donor-day-blood-donation-donor-logo-blood-donor_235461-84.jpg" alt="">
+                <h3>Request</h3>
+                <p>To request you should fill out the form, then we can help you find the nearest blood bank </p>
+                <a href="#" class="link-btn" onclick="openRequestPage()">fill form</a>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1297/1297136.png" alt="">
+                <h3>Blood Banks</h3>
+                <p>To find out any blood bank and its different blood groups availability, you can search for it </p>
+                <a href="#" class="link-btn" onclick="openFindPage()">fill form</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading">customer reviews</h1>
+
+        <div class="box-container container">
+
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d29tYW4lMjBwcm9maWxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60" alt="">
+                <h3>Kate Jennifer</h3>
+                <p>Ichor is life saving, my sister who was affected by dengue urgently needed platelets. I found out who can provide us near by my house, and im really thankful to Ichor for this amazing feature</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+                <h3>Vicky Justin</h3>
+                <p>I love community service activities, I donate blood regularly but as I got to know about Ichor and the services they provide I was able to help many people. It really felt amazing when I actually get to know how useful my act is to many people in different situataions. Their smile makes my day. Thanks Ichor I know for whom I am being helpful</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="">
+                <h3>Swathi Parmeshwar</h3>
+                <p>My daughter needs b+ blood every 3 months, using Ichor made my job easier. I can find a donor before hand and saves lot of time and effort, I dont have to worry too much about how am I gonna make arragements every 3months</p>
+                <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> our blog posts </h1>
+
+        <div class="box-container container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://labs.selfdecode.com/app/uploads/2019/11/bigstock-141297272-min.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>How to maintain healthy Blood levels</h3>
+                    <p>all the things you need to know to keep your heamoglobin levels good</p>
+                    <a href="#" class="link-btn" onclick="openBlogPage()">read more</a>
+                </div>
+                <div class="icons">
+                    <span> <i class="fas fa-calender"></i> 8th june, 2023 </span>
+                    <span> <i class="fas fa-user"></i> by Dr.Edwin </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdGtlGrTc4QP3FUiVfam0FuqekFGq3qqZcQ&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>Who can donate blood and why cant everyone do it</h3>
+                    <p>what are the restrictions and guidelines to follow for donating Blood</p>
+                    <a href="#" class="link-btn" onclick="openBlogPage()">read more</a>
+                </div>
+                <div class="icons">
+                    <span> <i class="fas fa-calender"></i> 19th june, 2023 </span>
+                    <span> <i class="fas fa-user"></i> by Dr.Anne </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+                <div class="content">
+                    <h3>How frequently can you donate</h3>
+                    <p>Why should we wait, before donating again after donating already</p>
+                    <a href="#" class="link-btn" onclick="openBlogPage()">read more</a>
+                </div>
+                <div class="icons">
+                    <span> <i class="fas fa-calender"></i> 21st july, 2022 </span>
+                    <span> <i class="fas fa-user"></i> by Dr.stefen </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact us</span></h1>
+
+        <div class="row">
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15226.8776245405!2d78.50070932721152!3d17.425248408519703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99855cf0c7d1%3A0x7c6831d1f1e307cd!2sPadmarao%20Nagar%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1689920871697!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <span class="fa-solid fa-message"></span>
+                    <input type="message" placeholder="Your Message">
+                </div>
+                <a href="#" class="link-btn">submit</a>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="credit"> created by <span>sumaiya</span> | all rights reserved </div>
+    </section>
+
+    
+
+
+
+
+
+<script src="/static/homepage.js"></script>
+
+
+</body>
+</html>
